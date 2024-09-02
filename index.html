@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    <script>
+       
+        //outer div for id
+        let card=document.createElement("div");
+        card.setAttribute("id","card");
+        card.style.padding="20px"
+        document.body.style.display="flex"
+        document.body.style.justifyContent="center"
+        card.style.width="300px"
+        card.style.border="2px solid black";
+        card.style.color="white";
+        card.style.backgroundColor="black";
+        document.body.appendChild(card);
+        //header for id card
+        let head=document.createElement("div");
+         head.setAttribute("id","head");
+         head.style.margin="auto";
+         //company logo
+        let sh1=document.createElement("div");
+        sh1.style.height="50px";
+        sh1.style.width="50px";
+        sh1.style.border="2px solid ";
+        sh1.style.borderRadius="50%";
+        head.appendChild(sh1);
+        //sub head for company name
+        let sh2=document.createElement("div");
+        let ssh2=document.createElement("p");
+        ssh2.innerText="SALFORD & CO.";
+        sh2.appendChild(ssh2);
+        head.appendChild(sh2);
+        head.style.display="flex";
+        head.style.justifyContent="space-around";
+        head.style.gap="10px";
+        // head.style.border="solid";
+        head.style.width="200px";
+        card.appendChild(head);
+          //profile-pic div siblling  of header
+          let elm=document.createElement("div");
+          elm.style.height="170px";
+          elm.style.width="180px";
+          elm.style.margin="auto";
+        //creating prof to append into elm
+          let prof=document.createElement("div");
+          prof.setAttribute("id","pic");
+          prof.style.height="150px";
+          prof.style.width="150px";
+          prof.style.border="5px solid";
+          prof.style.borderRadius="50%";
+          prof.style.margin="auto";
+          prof.style.backgroundImage=`url(./MV5BMTg5MzIxODI4Ml5BMl5BanBnXkFtZTgwNzExNzY1OTE@._V1_.jpg)`
+          prof.style.backgroundSize="cover";
+          prof.style.marginTop="5px"
+          card.appendChild(elm);//elm to card
+          elm.appendChild(prof);//
+       
+          // name of the profile holder
+          let namDiv=document.createElement("div");
+          let name=document.createElement("h3");
+          namDiv.style.margin="auto";
+          namDiv.style.width="200px";
+        //   namDiv.style.border="solid";
+          name.innerText="JASON BOURNE";
+          name.style.textAlign="center"
+          namDiv.appendChild(name);
+          card.appendChild(namDiv);
+          // Profile holder's Role 
+          let rolDiv=document.createElement("div");
+          rolDiv.style.width="200px";
+          rolDiv.style.margin="auto";
+          rolDiv.style.borderRadius="50px";
+          rolDiv.style.height="50px";
+          
+          rolDiv.style.backgroundColor="cornflowerblue";
+          rolDiv.style.display="flex"
+          let rol=document.createElement("p");
+          
+          rol.style.color="white"
+          rol.style.fontSize="22px";
+          rol.innerText="MANGER";
+          rol.style.margin="auto";
+          rolDiv.appendChild(rol);
+          card.appendChild(rolDiv);
+          // rest of the details
+          let footDiv=document.createElement("div");
+          footDiv.setAttribute("id","footer");
+          let iD=document.createElement("pre");
+          iD.innerText="ID No   :1234567890";
+          
+          footDiv.appendChild(iD);
+          footDiv.style.width="240px";
+          footDiv.style.margin="auto";
+        //   footDiv.style.border="solid";
+          footDiv.style.marginTop="30px"
+          let mail=document.createElement("pre");
+          mail.innerText="E-Mail  :jasonbourne@gmail.com";
+          footDiv.appendChild(mail);
+          let pho=document.createElement("pre");
+          pho.innerText="Phone   :+123-456-7890";
+          footDiv.appendChild(pho);
+          card.appendChild(footDiv)
+
+      
+</script>
+    
+</body>
+</html>
